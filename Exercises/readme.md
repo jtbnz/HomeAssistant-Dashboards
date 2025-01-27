@@ -17,7 +17,11 @@ How to create a excercise tracker Dashboard.  I used this to help with Shoulder 
 3. Add the Theme https://github.com/aFFekopp/noctis to Home Assistant
 
 
-![Designer](Designer.png)
+<p align="center">
+    <img src="Designer.png" alt="Designer" width="50%">
+    <br>
+    <em>Designer.png</em>
+</p>
 
 ## Helpers
 
