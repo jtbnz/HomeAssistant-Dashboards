@@ -5,7 +5,7 @@ How to create a excercise tracker Dashboard.  I used this to help with Shoulder 
 ## Overview
 
 
-![Example Dashboard](example-dashboard.png)
+<img src="example-dashboard.png" alt="Example Dashboard" width="50%">
 
 
 ## Guide
