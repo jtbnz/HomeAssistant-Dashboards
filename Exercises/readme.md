@@ -51,7 +51,7 @@ Helpers are used to create custom inputs and outputs for your dashboard.
 ## Automations
 
 ### Increment total and daily when the button is pressed
-(repeat for each button)
+(Create an new automation for each button)
 ```yaml
 alias: Count Arm Button 1
 description: ""
