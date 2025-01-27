@@ -1,0 +1,229 @@
+views:
+
+  - type: sections
+    max_columns: 2
+    title: Tree
+    path: tree
+    sections:
+      - type: grid
+        cards:
+          - type: picture
+            image: /api/image/serve/c1a3ff404ac1338b3989c64c4953f110/512x512
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '0'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '1'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/f228e95a58ac32688511cebed0e2d268/512x512
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '2'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/1872e6fa197c86f26cf36ab433d9207a/512x512
+            alt_text: Rotor
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '5'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/17f0bf272d434790e4825036f8efcf01/512x512
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '3'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/e1687001b2bffd0b4f0d8643b65f995c/512x512
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '4'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/8de9c53e941765a9401b99d348f0c2ca/512x512
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '12'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/9c9c7cfd1208648a68d19da4c3c17c29/512x512
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '14'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/7bd509d0e56996a5ccb541376184d710/512x512
+      - type: grid
+        cards:
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '11'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/735d059d6fae9c2c6e6d218fe568f601/512x512
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '9'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/5af70d7448c6408e605f653180652a8d/512x512
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '7'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/3d5c2f8a2a7faea2ddd130e5f1ebc369/512x512
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '10'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/35a53104f6325f08685448dada54064b/512x512
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '13'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/695568a745d892f890bb33dd44f45ca4/512x512
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '8'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/b5ab9906779196bee4b931371405340d/512x512
+          - type: picture
+            tap_action:
+              action: perform-action
+              perform_action: light.turn_on
+              data:
+                effect: '6'
+              target:
+                entity_id: light.twinkly1
+            grid_options:
+              columns: 3
+              rows: 2
+            image: /api/image/serve/f984761f0041d67a41f00baa259b5f13/512x512
+      - type: grid
+        cards:
+          - show_name: true
+            show_icon: false
+            type: button
+            tap_action:
+              action: perform-action
+              perform_action: automation.turn_off
+              target:
+                entity_id: automation.twinkly_rotation
+              data:
+                stop_actions: true
+            entity: automation.twinkly_rotation
+            name: Disable Playlist
+          - show_name: true
+            show_icon: false
+            type: button
+            tap_action:
+              action: perform-action
+              perform_action: automation.turn_on
+              target:
+                entity_id:
+                  - automation.twinkly_rotation
+            entity: automation.twinkly_rotation
+            name: Enable Playlist
+          - type: custom:mushroom-template-card
+            primary: '{{states[''light.twinkly1''].attributes.effect}}'
+            secondary: Return
+            icon: mdi:pine-tree
+            entity: light.twinkly1
+            badge_color: ''
+            icon_color: green
+            fill_container: false
+            tap_action:
+              action: navigate
+              navigation_path: /lovelace
+    cards: []
