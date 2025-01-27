@@ -1,0 +1,358 @@
+views:
+  - type: sections
+    max_columns: 2
+    title: Arm
+    path: arm
+    icon: mdi:arm-flex
+    sections:
+      - type: grid
+        cards:
+          - type: custom:button-card
+            icon: mdi:arm-flex
+            name: Flexion to 90°
+            entity: input_button.arm_button1
+            opacity: 1
+            show_state: true
+            tap_action:
+              action: call-service
+              service: input_button.press
+              service_data:
+                entity_id: input_button.arm_button1
+            hold_action:
+              action: null
+            show_entity_picture: false
+            entity_picture: /api/image/serve/2721ecb739caff7cee228444bde359e8/original
+            custom_fields:
+              btn:
+                card:
+                  type: custom:mushroom-chips-card
+                  chips:
+                    - type: entity
+                      tap_action:
+                        action: null
+                      entity: counter.arm_1_day
+                      icon: mdi:calendar-check
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --chip-background: {{ 'rgba(136, 130, 120, 1)'  }};
+                            padding: 5px!important;
+                            border-radius: 100px!important;
+                            mdi:calendar-check
+                            
+                            }
+                    - type: entity
+                      tap_action:
+                        action: null
+                      entity: counter.arm_1_total
+                      icon: false
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --chip-background: {{ 'rgba(136, 130, 120, 1)'  }};                padding: 5px!important;
+                            border-radius: 100px!important;
+                            
+                            }
+            styles:
+              grid:
+                - grid-template-areas: '"n btn" "s btn" "i btn"'
+                - grid-template-columns: 1fr min-content
+                - grid-template-rows: min-content min-content 1fr
+              card:
+                - padding: 20px 8px 20px 20px
+                - height: 190px
+                - opacity: 1
+                - background-color: transparent
+              img_cell:
+                - justify-content: start
+                - position: absolute
+                - height: 150px
+                - width: 150px
+                - left: 0
+                - bottom: 0
+                - margin: 0 0 -30px -30px
+                - background: '#5E81AC'
+                - border-radius: 100px
+              icon:
+                - position: relative
+                - width: 60px
+                - color: '#575551'
+                - opacity: 0.7
+              name:
+                - justify-self: start
+                - align-self: start
+                - font-size: 18px
+                - font-weight: 500
+                - color: black
+              state:
+                - justify-self: start
+                - align-self: start
+                - font-size: 14px
+                - opacity: 0.7
+                - color: black
+              custom_fields:
+                btn:
+                  - justify-content: end
+                  - align-self: start
+                  - color: '#2E3440'
+          - type: custom:button-card
+            name: Rotation to Neutral
+            entity: input_button.arm_button2
+            opacity: 1
+            show_state: true
+            tap_action:
+              action: call-service
+              service: input_button.press
+              service_data:
+                entity_id: input_button.arm_button2
+            hold_action:
+              action: null
+            custom_fields:
+              btn:
+                card:
+                  type: custom:mushroom-chips-card
+                  chips:
+                    - type: entity
+                      tap_action:
+                        action: null
+                      entity: counter.arm_2_day
+                      icon: mdi:calendar-check
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --chip-background: {{ 'rgba(136, 130, 120, 1)'  }};                padding: 5px!important;
+                            border-radius: 100px!important;
+                            mdi:calendar-check
+                            }
+                    - type: entity
+                      tap_action:
+                        action: null
+                      entity: counter.arm_2_total
+                      icon: false
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --chip-background: {{ 'rgba(136, 130, 120, 1)'  }};                padding: 5px!important;
+                            border-radius: 100px!important;
+                            
+                            }
+            styles:
+              grid:
+                - grid-template-areas: '"n btn" "s btn" "i btn"'
+                - grid-template-columns: 1fr min-content
+                - grid-template-rows: min-content min-content 1fr
+              card:
+                - padding: 20px 8px 20px 20px
+                - height: 190px
+                - opacity: 1
+                - background-color: transparent
+              img_cell:
+                - justify-content: start
+                - position: absolute
+                - height: 150px
+                - width: 150px
+                - left: 0
+                - bottom: 0
+                - margin: 0 0 -30px -30px
+                - background: '#90EE90'
+                - border-radius: 100px
+              icon:
+                - position: relative
+                - width: 60px
+                - color: '#575551'
+                - opacity: 0.7
+              name:
+                - justify-self: start
+                - align-self: start
+                - font-size: 18px
+                - font-weight: 500
+                - color: black
+              state:
+                - justify-self: start
+                - align-self: start
+                - font-size: 14px
+                - opacity: 0.7
+                - color: black
+              custom_fields:
+                btn:
+                  - justify-content: end
+                  - align-self: start
+                  - color: '#2E3440'
+        column_span: 1
+      - type: grid
+        cards:
+          - type: custom:button-card
+            name: Pendular
+            entity: input_button.arm_button3
+            opacity: 1
+            show_state: true
+            tap_action:
+              action: call-service
+              service: input_button.press
+              service_data:
+                entity_id: input_button.arm_button3
+            hold_action:
+              action: null
+            custom_fields:
+              btn:
+                card:
+                  type: custom:mushroom-chips-card
+                  chips:
+                    - type: entity
+                      tap_action:
+                        action: null
+                      entity: counter.arm_3_day
+                      icon: mdi:calendar-check
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --chip-background: {{ 'rgba(136, 130, 120, 1)'  }};                padding: 5px!important;
+                            border-radius: 100px!important;
+                            mdi:calendar-check
+                            }
+                    - type: entity
+                      tap_action:
+                        action: null
+                      entity: counter.arm_3_total
+                      icon: false
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --chip-background: {{ 'rgba(136, 130, 120, 1)'  }};                padding: 5px!important;
+                            border-radius: 100px!important;
+                            
+                            }
+            styles:
+              grid:
+                - grid-template-areas: '"n btn" "s btn" "i btn"'
+                - grid-template-columns: 1fr min-content
+                - grid-template-rows: min-content min-content 1fr
+              card:
+                - padding: 20px 8px 20px 20px
+                - height: 190px
+                - opacity: 1
+                - background-color: transparent
+              img_cell:
+                - justify-content: start
+                - position: absolute
+                - height: 150px
+                - width: 150px
+                - left: 0
+                - bottom: 0
+                - margin: 0 0 -30px -30px
+                - background: '#FFDFBA'
+                - border-radius: 100px
+              icon:
+                - position: relative
+                - width: 60px
+                - color: '#575551'
+                - opacity: 0.7
+              name:
+                - justify-self: start
+                - align-self: start
+                - font-size: 18px
+                - font-weight: 500
+                - color: black
+              state:
+                - justify-self: start
+                - align-self: start
+                - font-size: 14px
+                - opacity: 0.7
+                - color: black
+              custom_fields:
+                btn:
+                  - justify-content: end
+                  - align-self: start
+                  - color: '#2E3440'
+          - type: custom:button-card
+            name: Elbow & Wrist
+            entity: input_button.arm_button4
+            opacity: 1
+            show_state: true
+            tap_action:
+              action: call-service
+              service: input_button.press
+              service_data:
+                entity_id: input_button.arm_button4
+            hold_action:
+              action: null
+            custom_fields:
+              btn:
+                card:
+                  type: custom:mushroom-chips-card
+                  chips:
+                    - type: entity
+                      tap_action:
+                        action: null
+                      entity: counter.arm_4_day
+                      icon: mdi:calendar-check
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --chip-background: {{ 'rgba(136, 130, 120, 1)'  }};                padding: 5px!important;
+                            border-radius: 100px!important;
+                            mdi:calendar-check
+                            }
+                    - type: entity
+                      tap_action:
+                        action: null
+                      entity: counter.arm_4_total
+                      icon: false
+                      card_mod:
+                        style: |
+                          ha-card {
+                            --chip-background: {{ 'rgba(136, 130, 120, 1)'  }};                padding: 5px!important;
+                            border-radius: 100px!important;
+                            
+                            }
+            styles:
+              grid:
+                - grid-template-areas: '"n btn" "s btn" "i btn"'
+                - grid-template-columns: 1fr min-content
+                - grid-template-rows: min-content min-content 1fr
+              card:
+                - padding: 20px 8px 20px 20px
+                - height: 190px
+                - opacity: 1
+                - background-color: transparent
+              img_cell:
+                - justify-content: start
+                - position: absolute
+                - height: 150px
+                - width: 150px
+                - left: 0
+                - bottom: 0
+                - margin: 0 0 -30px -30px
+                - background: '#F08080'
+                - border-radius: 100px
+              icon:
+                - position: relative
+                - width: 60px
+                - color: '#575551'
+                - opacity: 0.7
+              name:
+                - justify-self: start
+                - align-self: start
+                - font-size: 18px
+                - font-weight: 500
+                - color: black
+              state:
+                - justify-self: start
+                - align-self: start
+                - font-size: 14px
+                - opacity: 0.7
+                - color: black
+              custom_fields:
+                btn:
+                  - justify-content: end
+                  - align-self: start
+                  - color: '#2E3440'
+    background:
+      opacity: 90
+      alignment: center
+      size: cover
+      repeat: repeat
+      attachment: fixed
+      image: /api/image/serve/2721ecb739caff7cee228444bde359e8/original
+    cards: []
+    theme: noctis
