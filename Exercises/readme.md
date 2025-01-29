@@ -94,30 +94,26 @@ description: ""
 triggers:
   - trigger: time
     at: "18:00:00"
-conditions:
-  - condition: numeric_state
-    entity_id: counter.arm_1_day
-    below: 3
-  - condition: or
-    conditions:
-      - condition: numeric_state
-        entity_id: counter.arm_2_day
-        below: 3
-  - condition: or
-    conditions:
-      - condition: numeric_state
-        entity_id: counter.arm_3_day
-        below: 3
-  - condition: or
-    conditions:
-      - condition: numeric_state
-        entity_id: counter.arm_4_day
-        below: 3
+conditions: []
 actions:
-  - data:
-      message: Do more Exercises
-    action: notify.mobile_app_jtb
-mode: single
+  - choose:
+      - conditions:
+          - condition: numeric_state
+            entity_id: counter.arm_1_day
+            below: 3
+          - condition: numeric_state
+            entity_id: counter.arm_2_day
+            below: 3
+          - condition: numeric_state
+            entity_id: counter.arm_3_day
+            below: 3
+          - condition: numeric_state
+            entity_id: counter.arm_4_day
+            below: 3
+        sequence:
+          - data:
+              message: Do more Exercises
+            action: notify.mobile_app_jtb
 ```
 
 
